@@ -16,6 +16,7 @@
 	width: 900px;
 	height: 600px;
 	background-color: #6666FF;
+	float: left;
 }
 #footer {
 	width: 100%;
