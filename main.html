@@ -2,7 +2,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>roro</title>
+	<title>yuri</title>
 	<link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
@@ -10,18 +10,30 @@
 	<blockquote>
 	</blockquote>
 	<ul>
-		<li><a href="#" onclick="changeBg('green')">Information</a></li>
-		<li><a href="#" onclick="changeBg('orange')">Solo mix</a></li>
-		<li><a href="#" onclick="changeBg('purple')">Duet mix</a></li>
-		<li><a href="#" onclick="changePic()">Example1</a></li>
-		<li><a href="#" onclick="changePic()">Example2</a></li>
+		<li><a href="#" onclick="changePic1()">Information</a></li>
+		<li><a href="#" onclick="changePic2()">Solo mix</a></li>
+		<li><a href="#" onclick="changePic3()">Duet mix</a></li>
+		<li><a href="#" onclick="changeyt1()">Example1</a></li>
+		<li><a href="#" onclick="changeyt2()">Example2</a></li>
 	</ul>
 	<blockquote>
 	</blockquote>
-	<div id="result"></div>
+	<div id="result1"><iframe id = 'result' src = '' target = 'img'></iframe></div>
 	<script>
-		function changePic(){
-			var result = document.write(<'iframe width="1280" height="720" src="https://www.youtube.com/embed/HjcCylGGb9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+		function changePic1(){
+			var result = document.getElementById("result").setAttribute('src' ,'Info.png');
+		}
+		function changePic2(){
+			var result = document.getElementById("result").setAttribute('src' ,'Solo.png');
+		}
+		function changePic3(){
+			var result = document.getElementById("result").setAttribute('src' ,'Duet.png');
+		}
+		function changeyt1(){
+			var result = document.getElementById("result").setAttribute('src', "https://www.youtube.com/embed/UFnmj_2-ZQA");
+		}
+		function changeyt2(){
+			var result = document.getElementById("result").setAttribute('src', "https://www.youtube.com/embed/B8gm6XXcexE");
 		}
 	</script>
 </body>
